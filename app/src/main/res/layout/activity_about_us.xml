@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back2"
-    tools:context=".LabTestActivity">
+    tools:context=".AboutUsActivity">
 
     <TextView
         android:id="@+id/textViewDDTitle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lab Test and Packages"
+        android:text="Welcome to our dental care services"
         android:textColor="@color/yellowLight"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -39,9 +39,9 @@
         android:id="@+id/textViewDDTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delivery Location: Pune"
+        android:text="About Us"
         android:textColor="@color/colorWhite"
-        android:textSize="16dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
