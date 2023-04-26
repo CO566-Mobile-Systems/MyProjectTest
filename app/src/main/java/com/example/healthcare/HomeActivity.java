@@ -40,12 +40,19 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
-        CardView labTest = findViewById(R.id.cardlabTest);
-        labTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this,LabTestActivity.class));
-            }
-        });
+         CardView aboutUs= findViewById(R.id.cardAboutUs);
+         aboutUs.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 startActivity(new Intent(HomeActivity.this,AboutUsActivity.class));
+             }
+         });
+//        CardView aboutUs = findViewById(R.id.cardAboutUs);
+//        aboutUs.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(HomeActivity.this,AboutUsActivity.class));
+//            }
+//        });
     }
 }
