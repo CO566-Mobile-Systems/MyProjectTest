@@ -23,7 +23,7 @@ public class HealthArticlesActivity extends AppCompatActivity {
                     {"Walking_Daily4", "", "", "", "Click More Details"},
                     {"Walking_Daily5", "", "", "", "Click More Details"},
             };
-    private int[] image ={
+    private int[] images ={
             R.drawable.health1,
             R.drawable.health2,
             R.drawable.health3,
@@ -56,6 +56,7 @@ public class HealthArticlesActivity extends AppCompatActivity {
             item.put("line2", health_details[i][1]);
             item.put("line3", health_details[i][2]);
             item.put("line4", health_details[i][3]);
+            item.put("line4", health_details[i][4]);
             list.add(item);
         }
         sa = new SimpleAdapter(this,list,
@@ -70,7 +71,7 @@ public class HealthArticlesActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
                 Intent it = new Intent(HealthArticlesActivity.this,HealthArticlesDetailsActivity.class);
                 it.putExtra ("text1",health_details[i][0]);
-                it.putExtra("text1",image[i]);
+                it.putExtra("text2",images[i]);
                 startActivity(it);
             }
         });
