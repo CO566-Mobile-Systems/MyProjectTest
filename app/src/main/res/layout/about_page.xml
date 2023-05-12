@@ -10,10 +10,13 @@
         android:id="@+id/line_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:lineSpacingExtra="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis bibendum nisi, a luctus libero. Integer eget arcu nec augue tristique ullamcorper vel vel purus."
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="italic" />
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
