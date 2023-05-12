@@ -17,11 +17,11 @@ public class HealthArticlesActivity extends AppCompatActivity {
 
     private  String[][] health_details =
             {
-                    {"Walking_Daily1", "", "", "", "Click More Details"},
-                    {"Walking_Daily2", "", "", "", "Click More Details"},
-                    {"Walking_Daily2", "", "", "", "Click More Details"},
-                    {"Walking_Daily4", "", "", "", "Click More Details"},
-                    {"Walking_Daily5", "", "", "", "Click More Details"},
+                    {"Oral Health and Disease", "", "", "", "Click More Details"},
+                    {"8 oral Hygiene Habits to Keep", "", "", "", "Click More Details"},
+                    {"Taking Care of your teeth", "", "", "", "Click More Details"},
+                    {"Oral Health Habits", "", "", "", "Click More Details"},
+                    {"Oral Health lockdown", "", "", "", "Click More Details"},
             };
     private int[] images ={
             R.drawable.health1,
