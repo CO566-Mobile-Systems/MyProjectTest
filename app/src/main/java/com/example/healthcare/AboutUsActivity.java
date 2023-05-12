@@ -14,10 +14,17 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class AboutUsActivity extends AppCompatActivity {
+
     private  String[][] health_details =
             {
-                    {"Oral Health and Disease", "", "", "", "Click More Details"},
-                    {"8 oral Hygiene Habits to Keep", "", "", "", "Click More Details"},
+                    {"Dental care practitioners are professionals who specialise in providing dental" +
+                            " care services to patients, including diagnosing and treating " +
+                            "various dental problems, performing dental procedures such as fillings," +
+                            " extractions, and cleanings, and educating patients about oral " +
+                            "hygiene and preventative dental care.These professionals are essential " +
+                            "to maintaining good oral health and preventing dental problems, such as cavities, " +
+                            "gum disease, and tooth loss.These professionals are essential to maintaining good oral " +
+                            "health and preventing dental problems, such as cavities, gum disease, and tooth loss. ",""},
             };
     HashMap<String,String> item;
     ArrayList list;
@@ -25,10 +32,12 @@ public class AboutUsActivity extends AppCompatActivity {
     ListView lst;
     Button btnBack;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
+        lst = findViewById(R.id.listViewHA);
         btnBack = findViewById(R.id.buttonCUBack);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +46,6 @@ public class AboutUsActivity extends AppCompatActivity {
                 startActivity(new Intent(AboutUsActivity.this, HomeActivity.class));
             }
         });
-
         list =new ArrayList();
         for(int i=0;i<health_details.length;i++){
             item= new HashMap<String,String>();
@@ -46,7 +54,7 @@ public class AboutUsActivity extends AppCompatActivity {
             list.add(item);
         }
         sa = new SimpleAdapter(this,list,
-                R.layout.multi_lines,
+                R.layout.about_page,
                 new String[]{"line1","line2"},
                 new int[]{R.id.line_a});
         ListView lst = findViewById(R.id.listViewHA);
