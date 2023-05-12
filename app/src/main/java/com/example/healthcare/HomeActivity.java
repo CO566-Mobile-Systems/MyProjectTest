@@ -18,8 +18,8 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
-        String username = sharedPreferences.getString("username","").toString();
-        Toast.makeText(getApplicationContext(), "Welcome"+username, Toast.LENGTH_SHORT).show();
+        String username = sharedPreferences.getString("username", "").toString();
+        Toast.makeText(getApplicationContext(), "Welcome" + username, Toast.LENGTH_SHORT).show();
 
         CardView exit = findViewById(R.id.cardExit);
         exit.setOnClickListener(new View.OnClickListener() {
@@ -35,24 +35,18 @@ public class HomeActivity extends AppCompatActivity {
         dentist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it= new Intent(HomeActivity.this, DoctorDetailsActivity.class);
-                it.putExtra("title","Dentist");
+                Intent it = new Intent(HomeActivity.this, DoctorDetailsActivity.class);
+                it.putExtra("title", "Dentist");
                 startActivity(it);
             }
         });
-         CardView aboutUs= findViewById(R.id.cardAboutUs);
-         aboutUs.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
-                 startActivity(new Intent(HomeActivity.this,AboutUsActivity.class));
-             }
-         });
-//        CardView aboutUs = findViewById(R.id.cardAboutUs);
-//        aboutUs.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(HomeActivity.this,AboutUsActivity.class));
-//            }
-//        });
+        CardView health  = findViewById(R.id.cardHealthArticles);
+        health.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,HealthArticlesActivity.class));
+            }
+        });
+
     }
 }
