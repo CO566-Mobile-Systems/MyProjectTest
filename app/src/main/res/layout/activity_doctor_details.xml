@@ -8,7 +8,7 @@
     tools:context=".DoctorDetailsActivity">
 
     <TextView
-        android:id="@+id/textViewDDName"
+        android:id="@+id/textViewHAName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dental Health Care"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.045" />
 
     <TextView
-        android:id="@+id/textViewDDTitle"
+        android:id="@+id/textViewHADTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dentist List"
@@ -32,11 +32,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDDName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHAName"
         app:layout_constraintVertical_bias="0.01999998" />
 
     <ListView
-        android:id="@+id/listViewDD"
+        android:id="@+id/listViewHA"
         android:layout_width="350dp"
         android:layout_height="500dp"
         android:layout_margin="10dp"
@@ -47,10 +47,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDDName" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewHAName" />
 
     <Button
-        android:id="@+id/buttonDDBack"
+        android:id="@+id/buttonHABack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BACK"
