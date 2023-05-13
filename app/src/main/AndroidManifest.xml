@@ -12,7 +12,10 @@
         android:theme="@style/Theme.Healthcare"
         tools:targetApi="31">
         <activity
-            android:name=".TreatmentPageActivity"
+            android:name=".TreatmentDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TreatmentDetailsAtivity"
             android:exported="false" />
         <activity
             android:name=".ContactUsActivity"
