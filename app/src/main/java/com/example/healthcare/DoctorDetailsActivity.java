@@ -17,11 +17,11 @@ import java.util.HashMap;
 public class DoctorDetailsActivity extends AppCompatActivity {
     private String[][] doctor_details =
             {
-                    {"Doctor Name :Sudath Nawagamuwage","Hospital Address: Aylesbury","Exp : 5yrs", "Mobile No:07592898", "600"},
-                    {"Doctor Name :Niveith Nawagamuwage","Hospital Address: Aylesbury","Exp : 5yrs", "Mobile No:07592898", "800"},
-                    {"Doctor Name :tania Nawagamuwage","Hospital Address: Aylesbury","Exp : 5yrs", "Mobile No:07592898", "900"},
-                    {"Doctor Name :saveyth Nawagamuwage","Hospital Address: Aylesbury","Exp : 5yrs", "Mobile No:07592898", "500"},
-                    {"Doctor Name :Kiveith Nawagamuwage","Hospital Address: Aylesbury","Exp : 5yrs", "Mobile No:07592898", "500"},
+                    {"Doctor Name :Sudath Nawagamuwage","Hospital Address: Aylesbury","Exp : 5yrs", "Mobile No:07592898", "£150.00"},
+                    {"Doctor Name :Niveith Nawagamuwage","Hospital Address: Aylesbury","Exp : 5yrs", "Mobile No:07592898", "£150.00"},
+                    {"Doctor Name :tania Nawagamuwage","Hospital Address: Aylesbury","Exp : 5yrs", "Mobile No:07592898", "£150.00"},
+                    {"Doctor Name :saveyth Nawagamuwage","Hospital Address: Aylesbury","Exp : 5yrs", "Mobile No:07592898", "£150.00"},
+                    {"Doctor Name :Kiveith Nawagamuwage","Hospital Address: Aylesbury","Exp : 5yrs", "Mobile No:07592898", "£150.00"},
             };
     HashMap<String,String> item;
     ArrayList list;
@@ -53,7 +53,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
             item.put("line2", doctor_details[i][1]);
             item.put("line3", doctor_details[i][2]);
             item.put("line4", doctor_details[i][3]);
-            item.put("line5", "Fees :"+ doctor_details[i][4]+"/-");
+            item.put("line5", "Fees :"+ doctor_details[i][4]);
             list.add(item);
         }
         sa = new SimpleAdapter(this,list,
