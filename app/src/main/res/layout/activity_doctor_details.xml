@@ -8,7 +8,7 @@
     tools:context=".DoctorDetailsActivity">
 
     <TextView
-        android:id="@+id/textViewCUName"
+        android:id="@+id/textViewAUName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dental Health Care"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.045" />
 
     <TextView
-        android:id="@+id/textViewCUTitle"
+        android:id="@+id/textViewAUTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dentist List"
@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCUName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAUName"
         app:layout_constraintVertical_bias="0.01999998" />
 
     <ListView
@@ -47,10 +47,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCUName" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewAUName" />
 
     <Button
-        android:id="@+id/buttonCUBack"
+        android:id="@+id/buttonAUBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BACK"
