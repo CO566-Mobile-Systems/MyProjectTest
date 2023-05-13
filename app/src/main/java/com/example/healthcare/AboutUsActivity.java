@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -15,7 +14,7 @@ import java.util.HashMap;
 
 public class AboutUsActivity extends AppCompatActivity {
 
-    private  String[][] health_details =
+    private  String[][] aboutus_details =
             {
                     {"Dental care practitioners are professionals who specialise in providing dental" +
                             " care services to patients, including diagnosing and treating " +
@@ -38,7 +37,7 @@ public class AboutUsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
         lst = findViewById(R.id.listViewHA);
-        btnBack = findViewById(R.id.buttonCUBack);
+        btnBack = findViewById(R.id.buttonAUBack);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,10 +46,10 @@ public class AboutUsActivity extends AppCompatActivity {
             }
         });
         list =new ArrayList();
-        for(int i=0;i<health_details.length;i++){
+        for(int i=0;i<aboutus_details.length;i++){
             item= new HashMap<String,String>();
-            item.put("line1", health_details[i][0]);
-            item.put("line2", health_details[i][1]);
+            item.put("line1", aboutus_details[i][0]);
+            item.put("line2", aboutus_details[i][1]);
             list.add(item);
         }
         sa = new SimpleAdapter(this,list,
