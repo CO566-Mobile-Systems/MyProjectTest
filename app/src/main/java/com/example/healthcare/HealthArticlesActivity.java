@@ -40,7 +40,7 @@ public class HealthArticlesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health_articles);
         lst = findViewById(R.id.listViewHA);
-        btnBack = findViewById(R.id.buttonCUBack);
+        btnBack = findViewById(R.id.buttonAUBack);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
