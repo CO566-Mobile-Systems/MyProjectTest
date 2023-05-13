@@ -21,7 +21,7 @@ public class HealthArticlesDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_health_articles_details);
 
         btnBack = findViewById(R.id.buttonHADBack);
-        tv1 = findViewById(R.id.textViewAUTitle);
+        tv1 = findViewById(R.id.textViewTMTitle);
         img = findViewById(R.id.imageViewHAD);
 
         Intent intent=getIntent();

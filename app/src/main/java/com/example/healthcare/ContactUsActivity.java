@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -36,7 +35,7 @@ public class ContactUsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_contact_us);
 
         listViewContactUs = findViewById(R.id.listViewHA);
-        buttonBack = findViewById(R.id.buttonAUBack);
+        buttonBack = findViewById(R.id.buttonTMBack);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
