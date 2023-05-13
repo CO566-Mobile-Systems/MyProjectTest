@@ -9,21 +9,22 @@
 
 
     <TextView
-        android:id="@+id/textViewCUName"
+        android:id="@+id/textViewAUName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dental Health Care"
+        android:text="Dental Health Care App"
         android:textColor="@color/purple_200"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintVertical_bias="0.042" />
 
     <TextView
-        android:id="@+id/textViewCUTitle"
+        android:id="@+id/textViewAUTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contact Us"
@@ -33,7 +34,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCUName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAUName"
         app:layout_constraintVertical_bias="0.01999998" />
 
     <ListView
@@ -48,10 +49,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCUName" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewAUName" />
 
     <Button
-        android:id="@+id/buttonCUBack"
+        android:id="@+id/buttonAUBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BACK"
@@ -60,5 +61,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
