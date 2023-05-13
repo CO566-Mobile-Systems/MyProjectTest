@@ -61,6 +61,13 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,ContactUsActivity.class));
             }
         });
+        CardView treatment = findViewById(R.id.cardContactUs);
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,TreatmentPageActivity.class));
+            }
+        });
 
     }
 }
