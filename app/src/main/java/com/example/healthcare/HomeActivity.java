@@ -54,7 +54,6 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,AboutUsActivity.class));
             }
         });
-
         CardView contact  = findViewById(R.id.cardContactUs);
         contact.setOnClickListener(new View.OnClickListener() {
             @Override
