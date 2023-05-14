@@ -59,7 +59,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dental Health Care"
+        android:text="Dental Health Care App"
         android:textColor="@color/purple_200"
         android:textSize="34sp"
         android:textStyle="bold"
