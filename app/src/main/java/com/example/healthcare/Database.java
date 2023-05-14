@@ -55,7 +55,8 @@ public class Database extends SQLiteOpenHelper {
         cv.put("contactno",contactno);
         cv.put("free",free);
         SQLiteDatabase db = getWritableDatabase();
-        db.insert("users",null, cv);
+//        db.insert("users",null, cv);
+        db.insert("bookAppointment",null, cv);
         db.close();
     }
 }

@@ -93,13 +93,32 @@ public class BookAppointmentActivity extends AppCompatActivity {
             }
         });
         //book appointment
+//        btnBook.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Database db =new Database(getApplicationContext(), "healthcare",null,1);
+//                SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
+//                String username = sharedPreferences.getString("username","").toString();
+//                Toast.makeText(getApplicationContext(),"Your appointmnet is done successfully",Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(BookAppointmentActivity.this, HomeActivity.class));
+//            }
+//        });
+
         btnBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Database db =new Database(getApplicationContext(), "healthcare",null,1);
-                SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
-                String username = sharedPreferences.getString("username","").toString();
-                Toast.makeText(getApplicationContext(),"Your appointmnet is done successfully",Toast.LENGTH_SHORT).show();
+                // Get the appointment data from the views
+                String doctorName = tv.getText().toString();
+                String address = ed2.getText().toString();
+                String contactno = ed3.getText().toString();
+                String free = ed4.getText().toString();
+
+                // Insert the appointment data into the database
+                Database db = new Database(getApplicationContext(), "healthcare", null, 1);
+                db.bookAppointment(doctorName, address, contactno, free);
+
+                // Show a success message and return to the home activity
+                Toast.makeText(getApplicationContext(), "Your appointment is done successfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(BookAppointmentActivity.this, HomeActivity.class));
             }
         });
