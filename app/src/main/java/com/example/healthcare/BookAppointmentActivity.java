@@ -92,18 +92,6 @@ public class BookAppointmentActivity extends AppCompatActivity {
 
             }
         });
-        //book appointment
-//        btnBook.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Database db =new Database(getApplicationContext(), "healthcare",null,1);
-//                SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
-//                String username = sharedPreferences.getString("username","").toString();
-//                Toast.makeText(getApplicationContext(),"Your appointmnet is done successfully",Toast.LENGTH_SHORT).show();
-//                startActivity(new Intent(BookAppointmentActivity.this, HomeActivity.class));
-//            }
-//        });
-
         btnBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
